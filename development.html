@@ -100,9 +100,15 @@
   <div class="inner">
     <p>[ … Brief description goes here … ]</p>
 
-<h2 class="attach_permalink" id="ensure-good-semantic-mark-up-eg-if-it-looks-like-a-header-mark-it-up-with-a-header-element">Ensure good semantic mark-up; e.g. if it looks like a header, mark it up with a header element</h2>
+<h2 class="attach_permalink" id="use-mark-up-to-convey-meaning">Use mark-up to convey meaning</h2>
 
-<p>[ … Tip description goes here … ]</p>
+<p>HTML5 provides many elements that signify meaning, such as <code>&lt;h1&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>, which can be interpreted and communicated by assistive technologies. Use these elements to help structure content and convey meaning that is visually apparent. ARIA roles can be used to provide additional meaning to page elements, for example, using <code>role='search'</code> to identify search functionality. Work with designers and content authors to ensure the given meaning is agreed and consistently used.</p>
+
+<aside class="learn_more"><h3>Example</h3>
+
+<p>[… Example of markup along side a visual design …]</p>
+
+</aside>
 
 <h2 class="attach_permalink" id="associate-a-label-with-all-form-elements">Associate a label with all form elements</h2>
 
@@ -127,29 +133,53 @@
   </li>
 </ul>
 
-<h2 class="attach_permalink" id="include-html5-structural-elements">Include HTML5 structural elements</h2>
-
-<p>[ … Tip description goes here … ]</p>
-
 <h2 class="attach_permalink" id="match-the-reading-order-and-the-code-order">Match the reading order and the code order</h2>
 
-<p>[ … Tip description goes here … ]</p>
+<p>As much as possible, ensure that the order of elements in the code matches the order of the visual design. This can be checked by removing CSS styling and comparing the order of the content with the visual hierarchy of the page.</p>
 
-<h2 class="attach_permalink" id="use-aria-to-provide-meaning-to-non-standard-interactive-elements">Use ARIA to provide meaning to non-standard interactive elements</h2>
+<aside class="learn_more"><h3>Example</h3>
 
-<p>[ … Tip description goes here … ]</p>
+<p>[… Example of code order versus visual order …]</p>
+
+</aside>
+
+<h2 class="attach_permalink" id="provide-meaning-to-non-standard-interactive-elements">Provide meaning to non-standard interactive elements</h2>
+
+<p>When creating new interactive elements, such as accordions, or off canvas navigation, ARIA attributes use to provide meaning and state. Additional code is usually required to implement interactions, for example, opening and closing elements.</p>
+
+<aside class="learn_more"><h3>Example</h3>
+
+<p>[… Example of hamburger menu, list of images as radio select, or collapsable accordion …]</p>
+
+</aside>
 
 <h2 class="attach_permalink" id="ensure-that-all-interactive-elements-are-keyboard-accessible">Ensure that all interactive elements are keyboard accessible</h2>
 
-<p>[ … Tip description goes here … ]</p>
+<p>This is easily checked by trying to interactive with a page using the keyboard only. If some functionality, is not reachable using just the keyboard then there is a problem. Think about keyboard access when developing new interactive elements, such as menus, collapsable accordions, or media players.</p>
+
+<aside class="learn_more"><h3>Example</h3>
+
+<p>[… <strong>Note:</strong> May be too complex to create an example for …]</p>
+
+</aside>
 
 <h2 class="attach_permalink" id="run-easy-checks-periodically-to-ensure-basic-accessibility">Run Easy Checks periodically to ensure basic accessibility</h2>
 
-<p>[ … Tip description goes here … ]</p>
+<p>Check code regularly for accessibility barriers to prevent serious issues becoming expensive to fix.</p>
+
+<p><strong>Note that</strong> this does not replace a comprehensive evaluation.</p>
+
+<aside class="learn_more"><h3>Example</h3>
+
+</aside>
 
 <h2 class="attach_permalink" id="check-your-code-validates">Check your code validates</h2>
 
-<p>[ … Tip description goes here … ]</p>
+<p>Validate HTML and CSS to identify possible compatibility problems. Fix identified problems to reduce the risk of errors on different devices.</p>
+
+<aside class="learn_more"><h3>Learn more</h3>
+
+</aside>
 
 <h2 class="attach_permalink" id="learn-more-about-accessibility">Learn more about accessibility</h2>
 
@@ -174,7 +204,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      22 May 2015
+  	      25 May 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
