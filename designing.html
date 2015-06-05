@@ -7,7 +7,7 @@
   &bull; Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-8ab4aa68.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-ac143c4e.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
 </head>
@@ -139,9 +139,36 @@
   <li><a href="#learn-more-about-accessibility">Learn more about accessibility</a></li>
 </ul>
 
+<article class="tip">
+
 <h2 class="attach_permalink" id="provide-sufficient-contrast-between-colors">Provide sufficient contrast between colors</h2>
 
 <p>Wherever text is displayed, including on buttons, check that you have chosen foreground/background color combinations that have sufficient contrast. For text on a background image check a sample of dominant colors or provide some way to make the text stand out. Where color is used to differentiate two or more objects, ensure that contrast is checked between the colors of adjacent objects.</p>
+
+<aside class="learn_more"><h3>Examples</h3>
+
+<div class="contrast three-column">
+  <figure>
+    <figcaption>Text with insufficient contrast</figcaption>
+    <div>
+      <p class="fail">Lorem ipsum dolor sit amet</p>
+    </div>
+  </figure>
+  <figure>
+    <figcaption>Text with sufficient contrast</figcaption>
+    <div>
+      <p class="pass">Sed do eiusmod tempor incididunt</p>
+    </div>
+  </figure>
+  <figure>
+    <figcaption>Button with sufficient contrast</figcaption>
+    <div>
+      <button>Remember buttons</button>
+    </div>
+  </figure>
+</div>
+
+</aside>
 
 <aside class="learn_more"><h3>Learn more</h3>
 
@@ -153,17 +180,60 @@
 
 </aside>
 
+</article>
+<article class="tip">
+
 <h2 class="attach_permalink" id="dont-use-color-alone-to-signify-meaning">Don't use color alone to signify meaning</h2>
 
 <p>Color can be a useful indicator of emphasis or meaning but can never be the only way such meaning is conveyed. Use additional notification methods that do not rely on color perception when using color to differentiate elements, for example in graphs or maps, or when highlighting information, for example required form fields or important text.</p>
 
-<aside class="learn_more"><h3>Example</h3>
+<aside class="learn_more"><h3>Examples</h3>
 
-<p>[… Image of example graph …]</p>
-
-<p>[… Reference to color in text example? …]</p>
+<div class="color-alone two-column">
+  <figure class="fail">
+    <figcaption>Inaccessible pie chart</figcaption>
+    <img src="images/inaccessible_pie_chart-29bab77d.png" width="200" height="200" alt="A pie chart">
+    <ul>
+      <li class="super">Superbear</li>
+      <li class="aqua">Aquabear</li>
+      <li class="bat">Batbear</li>
+      <li class="star">Starbear</li>
+      <li class="blue">Blue Bear</li>
+    </ul>
+  </figure>
+  <figure class="pass">
+    <figcaption>Accessible pie chart</figcaption>
+    <img src="images/accessible_pie_chart-ca3e13c2.png" width="200" height="200" alt="Chart of most battles won, Batbear is in the lead">
+    <ul>
+      <li class="super">Superbear (28%)</li>
+      <li class="aqua">Aquabear (11%)</li>
+      <li class="bat">Batbear (31%)</li>
+      <li class="star">Starbear (19%)</li>
+      <li class="blue">Blue Bear (11%)</li>
+    </ul>
+  </figure>
+  <figure class="reference fail">
+    <figcaption>Inappropriate reference using color only</figcaption>
+    <div>
+      <p><span class="required">Required fields</span></p>
+      <label for="name1">Name:</label> <input type="text" id="name1"><br>
+      <label class="required" for="email1">Email:</label> <input type="text" id="email1">
+    </div>
+  </figure>
+  <figure class="reference pass">
+    <figcaption>Appropriate reference with more than color</figcaption>
+    <div>
+      <p><span class='required'>Required fields</span> are marked with <span class='required'>✻</span></p>
+      <label for="name2">Name:</label> <input type="text" id="name2"><br>
+      <label class="required" for="email2">Email ✻:</label> <input type="text" id="email2">
+    </div>
+  </figure>
+</div>
 
 </aside>
+
+</article>
+<article class="tip">
 
 <h2 class="attach_permalink" id="ensure-interactive-elements-are-easily-identified">Ensure interactive elements are easily identified</h2>
 
@@ -171,9 +241,37 @@
 
 <aside class="learn_more"><h3>Example</h3>
 
-<p>[… Example of styles for normal, hover, focus, active on link (and form element)? …]</p>
+<div class="focus three-column">
+  <figure>
+    <figcaption>Plain link</figcaption>
+    <div>
+      <p><a href="#">Link one</a></p>
+    </div>
+  </figure>
+  <figure class="hover">
+    <figcaption>Hovering over a link</figcaption>
+    <div>
+      <p><a href="#">Link two</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
+    </div>
+  </figure>
+  <figure class="keyboard">
+    <figcaption>Link with keyboard focus</figcaption>
+    <div>
+      <p><a href="#">Link three</a></p>
+    </div>
+  </figure>
+  <figure class="active">
+    <figcaption>Link when activated</figcaption>
+    <div>
+      <p><a href="#">Link four</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
+    </div>
+  </figure>
+</div>
 
 </aside>
+
+</article>
+<article class="tip">
 
 <h2 class="attach_permalink" id="provide-consistent-navigation-and-orientation-information">Provide consistent navigation and orientation information</h2>
 
@@ -187,6 +285,9 @@
 
 </aside>
 
+</article>
+<article class="tip">
+
 <h2 class="attach_permalink" id="provide-visible-controls-for-audio-and-video-players">Provide visible controls for audio and video players</h2>
 
 <p>For designs that include audio or video content, ensure that there is provision for controls for the player. The controls should include as a minimum start, pause, seek controls, and volume controls. Ensure their position, size, and styling make them sufficiently prominent.</p>
@@ -196,6 +297,9 @@
 <p>[… Example of good and bad controls? …]</p>
 
 </aside>
+
+</article>
+<article class="tip">
 
 <h2 class="attach_permalink" id="ensure-form-elements-include-clearly-associated-labels">Ensure form elements include clearly associated labels</h2>
 
@@ -209,6 +313,9 @@
 
 </aside>
 
+</article>
+<article class="tip">
+
 <h2 class="attach_permalink" id="provide-clear-presentation-of-errors">Provide clear presentation of errors</h2>
 
 <p>When something goes wrong, it should be extremely obvious where to find the problem. Ideally, provide a list of errors above the form, repeat the error beside the offending form element, and create a style that make the element really stand out. Inline validation can be extremely helpful for many users, but needs careful coding to ensure accessibility.</p>
@@ -220,6 +327,9 @@
 <p>[… Example of form errors …]</p>
 
 </aside>
+
+</article>
+<article class="tip">
 
 <h2 class="attach_permalink" id="use-headers-and-whitespace-to-group-content">Use headers and whitespace to group content</h2>
 
@@ -233,6 +343,9 @@
 
 </aside>
 
+</article>
+<article class="tip">
+
 <h2 class="attach_permalink" id="present-text-in-a-flexible-font-size-and-line-length">Present text in a flexible font size and line length</h2>
 
 <p>Ideal font size will vary for all users, so it is important to ensure that changes in the font size can be accommodated in the design, for example, by creating different layouts for different levels of zoom. For all designs ensure that the line length is kept to about 80 characters maximum.</p>
@@ -244,6 +357,9 @@
 <p>[… Example of text layout? …]</p>
 
 </aside>
+
+</article>
+<article class="tip">
 
 <h2 class="attach_permalink" id="learn-more-about-accessibility">Learn more about accessibility</h2>
 
@@ -259,6 +375,8 @@
 </ul>
 
 </aside>
+
+</article>
 
 
   </div>
@@ -280,7 +398,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      03 June 2015
+  	      05 June 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
