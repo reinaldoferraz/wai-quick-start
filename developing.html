@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>
-  Developing for Web Accessibility
-  &bull; Quick Start Tips &bull; WAI
+    Developing for Web Accessibility &bull;
+  Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-ac143c4e.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-847ff2a7.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
 </head>
@@ -54,8 +54,8 @@
             <li class=""><a class="" href="./">Tips for Getting Started</a>
               <ol type='i'>
                 <li><a href="designing.html">Designing</a></li>
+                <li><a href="writing.html">Writing</a></li>
                 <li id="current-node" class="current-nav"><span class="label"><span id="current-icon">»</span>Developing</span></li>
-                <li><a href="authoring.html">Authoring</a></li>
                 <li><a href="evaluating.html">Evaluating</a></li>
                 <li><a href="managing.html">Managing</a></li>
                 <li><a href="advocating.html">Advocating</a></li>
@@ -99,10 +99,10 @@
         <a href="designing.html">Designing</a>
       </li>
       <li>
-        Developing
+        <a href="writing.html">Writing</a>
       </li>
       <li>
-        <a href="writing.html">Writing</a>
+        Developing
       </li>
       <li>
         <a href="evaluating.html">Evaluating</a>
@@ -117,12 +117,12 @@
 </nav>
 
   <header class="heading">
-    <h1>Developing for Web Accessibility</h1>
-    <p class="subtitle">Tips for markup and coding</p>
+      <h1>Developing for Web Accessibility</h1>
+      <p class="subtitle">Tips for markup and coding</p>
   </header>
 
   <div class="inner">
-      <p>These tips cover the basics of accessible web development. This is not an exhaustive list of requirements for web accessibility, but cover important points and provide links to help you find out more.</p>
+      <p>These introductory tips cover the basics of accessible web development. This is not an exhaustive list of requirements for web accessibility, but will help you start in the right direction.</p>
 
 <h2 class="toc no_toc" id="on-this-page">On this page</h2>
 
@@ -142,7 +142,7 @@
 
 <p>HTML5 provides many elements that signify meaning, such as <code>&lt;h1&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>, which can be interpreted and communicated by assistive technologies. Use these elements to help structure content and convey meaning that is visually apparent. ARIA roles can be used to provide additional meaning to page elements, for example, using <code>role='search'</code> to identify search functionality. Work with designers and content authors to ensure the given meaning is agreed and consistently used.</p>
 
-<aside class="learn_more"><h3>Example</h3>
+<aside class="example"><h3>Example</h3>
 
 <p>[… Example of markup along side a visual design …]</p>
 
@@ -155,7 +155,7 @@
 
 <p>Associate the <code>&lt;label&gt;</code> element with form elements using the <em>for</em> and <em>id</em> attributes. If there is not a visible label, provide a label and position it offscreen using CSS. </p>
 
-<aside class="learn_more"><h3>Example</h3>
+<aside class="example"><h3>Example</h3>
 
 <pre><code>&lt;label for="username"&gt;
 &lt;input id="username" type="text"&gt;
@@ -181,7 +181,7 @@
 
 <p>As much as possible, ensure that the order of elements in the code matches the order of the visual design. This can be checked by removing CSS styling and comparing the order of the content with the visual hierarchy of the page.</p>
 
-<aside class="learn_more"><h3>Example</h3>
+<aside class="example"><h3>Example</h3>
 
 <p>[… Example of code order versus visual order …]</p>
 
@@ -194,7 +194,7 @@
 
 <p>When creating new interactive elements, such as accordions, or off canvas navigation, ARIA attributes use to provide meaning and state. Additional code is usually required to implement interactions, for example, opening and closing elements.</p>
 
-<aside class="learn_more"><h3>Example</h3>
+<aside class="example"><h3>Example</h3>
 
 <p>[… Example of hamburger menu, list of images as radio select, or collapsable accordion …]</p>
 
@@ -207,7 +207,7 @@
 
 <p>This is easily checked by trying to interactive with a page using the keyboard only. If some functionality, is not reachable using just the keyboard then there is a problem. Think about keyboard access when developing new interactive elements, such as menus, collapsable accordions, or media players.</p>
 
-<aside class="learn_more"><h3>Example</h3>
+<aside class="example"><h3>Example</h3>
 
 <p>[… <strong>Note:</strong> May be too complex to create an example for …]</p>
 
@@ -265,7 +265,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      05 June 2015
+  	      08 June 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
