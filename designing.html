@@ -7,7 +7,7 @@
   Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-45d30573.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-a88d213d.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
 </head>
@@ -215,16 +215,16 @@
     <figcaption>Inappropriate reference using color only</figcaption>
     <div>
       <p><span class="required">Required fields</span></p>
-      <label for="name1">Name:</label> <input type="text" id="name1"><br>
-      <label class="required" for="email1">Email:</label> <input type="text" id="email1">
+      <label for="name1">Name:</label> <input type="text" id="name1" name="name"><br>
+      <label class="required" for="email1">Email:</label> <input type="text" id="email1" name="email">
     </div>
   </figure>
   <figure class="reference pass">
     <figcaption>Appropriate reference with more than color</figcaption>
     <div>
       <p><span class='required'>Required fields</span> are marked with <span class='required'>✻</span></p>
-      <label for="name2">Name:</label> <input type="text" id="name2"><br>
-      <label class="required" for="email2">Email ✻:</label> <input type="text" id="email2">
+      <label for="name2">Name:</label> <input type="text" id="name2" name="name"><br>
+      <label class="required" for="email2">Email ✻:</label> <input type="text" id="email2" name="email">
     </div>
   </figure>
 </div>
@@ -323,7 +323,6 @@
   </figure>
 </div>
 
-
 </aside>
 
 </article>
@@ -338,6 +337,48 @@
 <p>[<strong>Note:</strong> Should some mention be made regarding space for instructions?]</p>
 
 <aside class="example"><h3>Example</h3>
+
+<div class="labels">
+  <figure class="fail">
+    <figcaption>Poor example of associated labels</figcaption>
+    <div>
+      <form action="">
+        <div class="row">
+          <label for="name3">Name</label>
+          <input type="text" id="name3" name="name">
+        </div>
+        <div class="row">
+          <label class="required" for="email3">Email ✻</label>
+          <input type="text" id="email3" name="email">
+        </div>
+        <div class="row">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website">
+        </div>
+        <div class="row">
+          <textarea name="comment" id="comment"></textarea>
+        </div>
+      </form>
+      <p></p>
+    </div>
+  </figure>
+  <figure class="pass">
+    <figcaption>Good example of associated labels</figcaption>
+    <div>
+      <form action="">
+        <div class="row">
+          <label for="name4">Name</label>
+          <input type="text" id="name4" name="name">
+        </div>
+        <div class="row">
+          <label class="required" for="email4">Email ✻</label>
+          <input type="text" id="email4" name="email">
+        </div>
+      </form>
+      <p></p>
+    </div>
+  </figure>
+</div>
 
 </aside>
 
@@ -426,7 +467,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      08 June 2015
+  	      09 June 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
