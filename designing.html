@@ -7,7 +7,7 @@
   Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-2ae9c29c.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-28bd236f.css" rel="stylesheet" type="text/css" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
@@ -141,7 +141,7 @@
   <li><a href="#ensure-form-elements-include-clearly-associated-labels">Ensure form elements include clearly associated labels</a></li>
   <li><a href="#provide-clear-feedback">Provide clear feedback</a></li>
   <li><a href="#use-headers-and-whitespace-to-group-related-content">Use headers and whitespace to group related content</a></li>
-  <li><a href="#present-text-in-a-flexible-font-size-and-line-length">Present text in a flexible font size and line length</a></li>
+  <li><a href="#create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</a></li>
   <li><a href="#learn-more-about-accessibility">Learn more about accessibility</a></li>
 </ul>
 
@@ -340,7 +340,7 @@
 
 <p>When creating forms, ensure that all elements have a descriptive label adjacent to the element. Labels are usually positioned to the left or above the element, except for checkboxes and radio buttons where it is usually to the right. Avoid having too much distance between labels and associated elements.</p>
 
-<aside class="example"><h3>Example</h3>
+<aside class="example"><h3>Examples</h3>
 
 <div class="labels">
   <figure class="fail">
@@ -401,7 +401,6 @@
 <p>When something goes wrong, it should be extremely obvious where to find the problem. Ideally, provide a list of errors above the form, repeat the error beside the offending form element, and create a style that make the element really stand out. Well designed and visible inline validation can be extremely helpful for many users, but needs careful coding to ensure accessibility.</p>
 
 <aside class="example"><h3>Example</h3>
-
 
 <div class="errors">
   <figure>
@@ -469,15 +468,22 @@
 </article>
 <article class="tip">
 
-<h2 class="attach_permalink" id="present-text-in-a-flexible-font-size-and-line-length">Present text in a flexible font size and line length</h2>
+<h2 class="attach_permalink" id="create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</h2>
 
-<p>Ideal font size will vary for all users, so it is important to ensure that changes in the font size can be accommodated in the design, for example, by creating different layouts for different levels of zoom. For all designs ensure that the line length is kept to about 80 characters maximum.</p>
-
-<p>[<strong>Note:</strong> Suggests a separate section on creating responsive designs?]</p>
+<p>Commonly called 'responsive design', consider how page information can be presented in different sized viewports, such as mobile phones or zoomed browser windows. Consider position and presentation of main elements, such as header and navigation. Also, ensure text size and line width are set to maximize readability and legibility.</p>
 
 <aside class="example"><h3>Example</h3>
 
-<p>[… Example of text layout? …]</p>
+
+<div class="responsive">
+  <figure>
+    <figcaption>Example of content displayed in different viewport sizes</figcaption>
+    <div>
+      <img src="images/phone-44732324.png" alt="Example of content displayed in a phone">
+      <img src="images/browser-7fafcd98.png" alt="Example of content zoomed in a browser">
+    </div>
+  </figure>
+</div>
 
 </aside>
 
@@ -521,7 +527,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      12 June 2015
+  	      15 June 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
