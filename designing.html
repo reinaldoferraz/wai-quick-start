@@ -7,7 +7,7 @@
   Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-6f65d6d7.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-110ad793.css" rel="stylesheet" type="text/css" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
@@ -128,7 +128,7 @@
   <h2>What is <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>?</h2>
   <p>The Web Content Accessibility Guidelines (WCAG) are the international standard on web accessibility.</p>
   
-  <p><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> requirements are specified as Success Criteria (SC) that detail what needs to be done to meet each requirement.</p>
+  <p><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> requirements are specified as Success Criteria (SC).</p>
   
   <p><a href="/WAI/intro/wcag.php">Find out more about <acronym title="Web Content Accessibility Guidelines">WCAG</acronym></a></p>
 </aside>
@@ -160,7 +160,7 @@
 
 <h2 class="attach_permalink" id="provide-sufficient-contrast-between-colors">Provide sufficient contrast between colors</h2>
 
-<p>Text needs to have sufficient contrast between foreground and background colors. This includes text on images, buttons, and other elements. A minimum contrast ratio is required by the Web Content Accessibility Guidelines (WCAG) and guidance on how to check contrast ratio is available. This does not apply for logos, or incidental text, such as text that happens to be in a photograph.</p>
+<p>Text needs to have sufficient contrast between foreground and background colors. This includes text on images, background gradients, buttons, and other elements. A minimum contrast ratio is required by the Web Content Accessibility Guidelines (WCAG) and guidance on how to check contrast ratio is available. This does not apply for logos, or incidental text, such as text that happens to be in a photograph.</p>
 
 <p>Note that "contrast" is used as a short form for the more technically correct term "luminance contrast".</p>
 
@@ -251,30 +251,34 @@
 <aside class="example"><h3>Examples</h3>
 
 <div class="focus two-column">
-  <figure>
-    <figcaption>Style links to stand out from surrounding text</figcaption>
-    <div>
-      <p>Pop into <a href='javascript:return false;'>our Training Centre</a> to pick up an application form.</p>
-    </div>
-  </figure>
-  <figure class="hover">
-    <figcaption>Change style when links are hovered over with a mouse</figcaption>
-    <div>
-      <p>Pop into <a href=''>our Training Centre</a><img src="images/pointer-ca21d649.png" width="20" alt=""> to pick up an application form.</p>
-    </div>
-  </figure>
-  <figure class="keyboard">
-    <figcaption>Extra styling when links are tabbed to are helpful</figcaption>
-    <div>
-      <p>Pop into <a href=''>our Training Centre</a> to pick up an application form.</p>
-    </div>
-  </figure>
-  <figure class="active">
-    <figcaption>Strong styles for touched or clicked links can promote action</figcaption>
-    <div>
-      <p>Pop into <a href='javascript:return false;'>our Training Centre</a><img src="images/pointer-ca21d649.png" width="20" alt=""> to pick up an application form.</p>
-    </div>
-  </figure>
+  <div>
+    <figure>
+      <figcaption>Style links to stand out from text</figcaption>
+      <div>
+        <p>Soon her eye fell on a little glass box that was lying under the table: she opened it, and found in it a very small cake, on which the words '<a href="javascript:return false;">EAT ME</a>' were beautifully marked in currants. 'Well, I'll eat it,' said Alice, 'and if it makes me grow larger, I can reach the key; and if it makes me grow smaller, I can creep under the door; so either way I'll get into the garden, and I don't care which happens!'</p>
+      </div>
+    </figure>
+  </div>
+  <div>
+    <figure class="hover">
+      <figcaption>Hovered over with a mouse</figcaption>
+      <div>
+        <p><a href="javascript:return false;">EAT ME</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
+      </div>
+    </figure>
+    <figure class="keyboard">
+      <figcaption>Tabbed to link</figcaption>
+      <div>
+        <p><a href="javascript:return false;">EAT ME</a></p>
+      </div>
+    </figure>
+    <figure class="active">
+      <figcaption>Touched or clicked link</figcaption>
+      <div>
+        <p><a href="javascript:return false;">EAT ME</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
+      </div>
+    </figure>
+  </div>
 </div>
 
 </aside>
@@ -497,7 +501,7 @@
 
 <h2 class="attach_permalink" id="provide-a-text-alternative-for-images">Provide a text alternative for images</h2>
 
-<p>Provide a text description to communicate what information or function images are being used for in designs. Images can be used in many different ways, such as to convey information, as decorative support, or in functional ways. Consider what the images is being selected to do and provide text to describe that purpose.</p>
+<p>Provide a text description to communicate what information or function images are being used for in designs. Images can be used in many different ways, such as to convey information, as decorative support, or in functional ways. Consider what the image is being selected to do and provide text to describe that purpose. Decorative images, that don't add information to the content of the page, should be presented in CSS or provided with empty alternative text.</p>
 
 <aside class="example"><h3>Example</h3>
 
@@ -529,9 +533,10 @@
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><a href="/standards/webdesign/accessibility"><abbr title="World Wide Web Consortium">W3C</abbr> Accessibility</a>: <abbr title="World Wide Web Consortium">W3C</abbr> introduces accessibility and provides links to many helpful resources</li>
-  <li><a href="/WAI/intro/people-use-web/principles">Accessibility Principles</a>: Provides an introduction to the web accessibility requirements referenced in the international accessibility standards from W3C Web Accessibility Initiative</li>
-  <li><a href="/WAI/intro/people-use-web">How people with disabilities use the web</a>: Uses real-life examples to introduce accessibility, and explores tools and approaches that help, and barriers encountered </li>
+  <li><a href="/standards/webdesign/accessibility"><abbr title="World Wide Web Consortium">W3C</abbr> Accessibility</a>: Introduces accessibility and provides links to many helpful resources</li>
+  <li><a href="/WAI/intro/people-use-web/principles">Accessibility Principles</a>: An introduction to the web accessibility requirements referenced in the international accessibility standards from W3C Web Accessibility Initiative</li>
+  <li><a href="/WAI/intro/people-use-web">How people with disabilities use the web</a>: Real-life examples to introduce accessibility, and explore tools and approaches that help, and barriers encountered
+Shows real-life examples of the impact of accessibilty design on people with disabilities</li>
   <li><a href="/WAI/tutorials/">Web Accessibility Tutorials</a>: Shows you how to develop web content that is accessible to people with disabilities, and that provides a better user experience for everyone</li>
   <li><a href="/WAI/demos/bad/">Before and After Demonstration</a>: Example accessible and inaccessible websites that share the same visual design, including annotations that highlight key accessibility barriers and repairs</li>
 </ul>
