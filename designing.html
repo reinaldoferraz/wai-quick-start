@@ -7,7 +7,7 @@
   Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-805f4f69.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-6f65d6d7.css" rel="stylesheet" type="text/css" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
@@ -148,15 +148,15 @@
   <li><a href="#dont-use-color-alone-to-signify-meaning">Don't use color alone to signify meaning</a></li>
   <li><a href="#ensure-interactive-elements-are-easy-to-identify">Ensure interactive elements are easy to identify</a></li>
   <li><a href="#provide-clear-and-consistent-navigation-options">Provide clear and consistent navigation options</a></li>
-  <li><a href="#provide-visible-controls-for-audio-and-video-players">Provide visible controls for audio and video players</a></li>
   <li><a href="#ensure-form-elements-include-clearly-associated-labels">Ensure form elements include clearly associated labels</a></li>
   <li><a href="#provide-clear-feedback">Provide clear feedback</a></li>
   <li><a href="#use-headings-and-spacing-to-group-related-content">Use headings and spacing to group related content</a></li>
   <li><a href="#create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</a></li>
+  <li><a href="#provide-a-text-alternative-for-images">Provide a text alternative for images</a></li>
   <li><a href="#learn-more-about-accessibility">Learn more about accessibility</a></li>
 </ul>
 
-<article class="tip option1">
+<article class="tip ">
 
 <h2 class="attach_permalink" id="provide-sufficient-contrast-between-colors">Provide sufficient contrast between colors</h2>
 
@@ -166,23 +166,17 @@
 
 <aside class="example"><h3>Examples</h3>
 
-<div class="contrast three-column">
+<div class="contrast two-column">
   <figure>
     <figcaption>Text with insufficient contrast</figcaption>
     <div>
-      <p class="fail">Lorem ipsum dolor sit amet</p>
+      <p class="fail">'But they were IN the well,' Alice said to the Dormouse, not choosing to notice this last remark. 'Of course they were', said the Dormouse; '—well in.' 'But they were IN the well,' Alice said to the Dormouse, not choosing to notice this last remark.</p>
     </div>
   </figure>
   <figure>
     <figcaption>Text with sufficient contrast</figcaption>
     <div>
-      <p class="pass">Sed do eiusmod tempor incid</p>
-    </div>
-  </figure>
-  <figure>
-    <figcaption>Button with sufficient contrast</figcaption>
-    <div>
-      <button>Remember buttons</button>
+      <p class="pass">'They were learning to draw,' the Dormouse went on, yawning and rubbing its eyes, for it was getting very sleepy; 'and they drew all manner of things—everything that begins with an M—' 'Why with an M?' said Alice. 'Why not?' said the March Hare.</p>
     </div>
   </figure>
 </div>
@@ -202,11 +196,11 @@
 </article>
 
 </article>
-<article class="tip option2">
+<article class="tip ">
 
 <h2 class="attach_permalink" id="dont-use-color-alone-to-signify-meaning">Don't use color alone to signify meaning</h2>
 
-<p>Color can be a useful indicator of emphasis or meaning but should not be the only way such meaning is conveyed. Use additional identification that does not rely on color perception when using color to differentiate elements. For example, use an asterisk in addition to color to indicate required form fields, and use labels and patterns to help distinguish areas on graphs and maps.</p>
+<p>Color can be a useful to indicate emphasis or meaning but should not be the only way information is conveyed. Use additional identification that does not rely on color perception when using color to differentiate elements. For example, use an asterisk in addition to color to indicate required form fields, and use labels and patterns to help distinguish areas on graphs and maps.</p>
 
 <aside class="example"><h3>Examples</h3>
 
@@ -248,37 +242,37 @@
 </article>
 
 </article>
-<article class="tip option3">
+<article class="tip ">
 
 <h2 class="attach_permalink" id="ensure-interactive-elements-are-easy-to-identify">Ensure interactive elements are easy to identify</h2>
 
-<p>Provide distinct styles for interactive elements, such as links, buttons, and other controls, to make them easy to distinguish and identify. Where appropriate, provide distinct styles for mouse hover, keyboard focus, and touch-screen activation so that users can identify the state of the element.</p>
+<p>Provide distinct styles for interactive elements, such as links, buttons, and other controls, to make them easy to distinguish and identify. Those styles include interaction specific changes of appearance, for example in the event of a mouse hover, keyboard focus, and touch-screen activation. This helps users to identify the state of the element.</p>
 
 <aside class="example"><h3>Examples</h3>
 
-<div class="focus four-column">
+<div class="focus two-column">
   <figure>
-    <figcaption>Plain links stand out from surrounding text</figcaption>
+    <figcaption>Style links to stand out from surrounding text</figcaption>
     <div>
-      <p><a href="#">Plain link</a></p>
+      <p>Pop into <a href='javascript:return false;'>our Training Centre</a> to pick up an application form.</p>
     </div>
   </figure>
   <figure class="hover">
-    <figcaption>Hovering over a link changes style</figcaption>
+    <figcaption>Change style when links are hovered over with a mouse</figcaption>
     <div>
-      <p><a href="#">Hovered link</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
+      <p>Pop into <a href=''>our Training Centre</a><img src="images/pointer-ca21d649.png" width="20" alt=""> to pick up an application form.</p>
     </div>
   </figure>
   <figure class="keyboard">
-    <figcaption>A link with keyboard focus can be really clear</figcaption>
+    <figcaption>Extra styling when links are tabbed to are helpful</figcaption>
     <div>
-      <p><a href="#">Link with focus</a></p>
+      <p>Pop into <a href=''>our Training Centre</a> to pick up an application form.</p>
     </div>
   </figure>
   <figure class="active">
-    <figcaption>Change style for touched or clicked links</figcaption>
+    <figcaption>Strong styles for touched or clicked links can promote action</figcaption>
     <div>
-      <p><a href="#">Activated link</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
+      <p>Pop into <a href='javascript:return false;'>our Training Centre</a><img src="images/pointer-ca21d649.png" width="20" alt=""> to pick up an application form.</p>
     </div>
   </figure>
 </div>
@@ -305,7 +299,7 @@
 
 <h2 class="attach_permalink" id="provide-clear-and-consistent-navigation-options">Provide clear and consistent navigation options</h2>
 
-<p>Ensure page designs include clear and consistent naming, styling and positioning of navigation elements. Provide more than one method of navigation, such as a navigation menu, a site search, or a site map. Help users understand where they are on a web page and in a website by providing orientation cues, such as clear headings and, if appropriate, breadcrumbs.</p>
+<p>Ensure page designs include clear and consistent naming, styling and positioning of navigation elements. If your web site consists of many pages, provide more than one method of navigation, such as a breadcrumb navigation, a site search, or a site map. Help users understand where they are on a web page and in a website by providing orientation cues, such as clear headings and, if appropriate, breadcrumbs.</p>
 
 <aside class="learn_more"><h3>Learn more</h3>
 
@@ -320,18 +314,11 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="provide-visible-controls-for-audio-and-video-players">Provide visible controls for audio and video players</h2>
-
-<p>For designs that include audio or video content, ensure that there is provision for controls for the player. The controls should include as a minimum start, pause, seek controls, volume controls, and closed captions activation. Ensure their position, size, and styling make them sufficiently prominent. Provide styling options for when each element is active, for example, hovered over with mouse, or receiving keyboard focus.</p>
-
-</article>
-<article class="tip ">
-
 <h2 class="attach_permalink" id="ensure-form-elements-include-clearly-associated-labels">Ensure form elements include clearly associated labels</h2>
 
-<p>When creating forms, ensure that all elements have a descriptive label adjacent to the element. Labels are usually positioned to the left or above the element, except for checkboxes and radio buttons where it is usually to the right. Avoid having too much distance between labels and associated elements.</p>
+<p>When creating forms, ensure that all fields have an adjacent, descriptive label. For left-to-right languages, labels are usually positioned to the left or above the field, except for checkboxes and radio buttons where it is usually to the right. Avoid having too much distance between labels and associated elements.</p>
 
-<aside class="example"><h3 id="labels_example" class="attach_show">Examples</h3>
+<aside class="example"><h3>Examples</h3>
 
 <div class="labels">
   <figure class="fail">
@@ -339,7 +326,7 @@
     <div>
       <form action="">
         <div class="row">
-          <label class="required">Email ✻</label>
+          <label class="required">E-mail ✻</label>
           <input type="text" id="email3" name="email">
         </div>
         <div class="row">
@@ -358,7 +345,7 @@
       <form action="">
         <legend>Add a comment</legend>
         <div class="row">
-          <label class="required" for="email4">Your Email ✻</label>
+          <label class="required" for="email4">Your E-mail ✻</label>
           <input type="text" id="email4" name="email">
         </div>
         <div class="row">
@@ -402,19 +389,19 @@
 
 <h2 class="attach_permalink" id="provide-clear-feedback">Provide clear feedback</h2>
 
-<p>Provide feedback for any page interactions, such as confirmation of form submission, alerting the user when something when wrong, or notification of changes on the page. Important feedback that requires user action should be presented in a style that really stands out. Any instructions should be clear and easy to follow. </p>
+<p>Provide feedback for any page interactions, such as confirmation of form submission, alerting the user when something goes wrong, or notification of changes on the page. Important feedback that requires user action should be presented in a prominent style. Any instructions should be clear and easy to follow. </p>
 
-<aside class="example"><h3 id="feedback_example" class="attach_show">Example</h3>
+<aside class="example"><h3>Example</h3>
 
 <div class="errors">
   <figure>
     <figcaption>Example of prominent errors</figcaption>
     <div>
       <div class="errors">
-        <p>There were two problems with your submission.</p>
+        <p>There are two problems.</p>
         <ol class="fa-ul">
-          <li id="error_email"><span class="fa fa-li fa-exclamation-triangle"></span><a href="javascript:document.getElementById('email5').focus()">The email address provided does not seem to be valid</a></li>
-          <li id="error_comment"><span class="fa fa-li fa-exclamation-triangle"></span><a href="javascript:document.getElementById('comment3').focus()">There was no comment provided</a></li>
+          <li id="error_email"><span class="fa fa-li fa-exclamation-triangle"></span><a href="javascript:document.getElementById('email5').focus()">The E-mail you provided is not valid</a></li>
+          <li id="error_comment"><span class="fa fa-li fa-exclamation-triangle"></span><a href="javascript:document.getElementById('comment3').focus()">A Comment is required</a></li>
         </ol>
       </div>
       <form action="">
@@ -424,7 +411,7 @@
           <input type="text" id="name5" name="name" value="Superbear">
         </div>
         <div class="row error">
-          <label class="required" for="email5"><span class="fa fa-exclamation-triangle"></span> Email ✻</label>
+          <label class="required" for="email5"><span class="fa fa-exclamation-triangle"></span> E-mail ✻</label>
           <input type="text" id="email5" name="email" value="superbear@@hq.space" aria-invalid="true" aria-describedby="error_email">
         </div>
         <div class="row">
@@ -476,7 +463,7 @@
 
 <h2 class="attach_permalink" id="create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</h2>
 
-<p>Commonly called 'responsive design', consider how page information is presented in different sized viewports, such as mobile phones or zoomed browser windows. Position and presentation of main elements, such as header and navigation can be changed to make best use of the space. Ensure text size and line width are set to maximize readability and legibility.</p>
+<p>Consider how page information is presented in different sized viewports, such as mobile phones or zoomed browser windows. Position and presentation of main elements, such as header and navigation can be changed to make best use of the space. Ensure text size and line width are set to maximize readability and legibility.</p>
 
 <aside class="example"><h3>Example</h3>
 
@@ -501,6 +488,33 @@
   <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#visual-audio-contrast-scale"><acronym title="Success Criteria">SC</acronym> 1.4.4 Resize text</a></li>
   <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">Understanding <acronym title="Success Criteria">SC</acronym> 1.4.4 Resize text</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#retiree">Describes how alternative views of zoomed pages can be helpful</a></li>
+</ul>
+
+</article>
+
+</article>
+<article class="tip ">
+
+<h2 class="attach_permalink" id="provide-a-text-alternative-for-images">Provide a text alternative for images</h2>
+
+<p>Provide a text description to communicate what information or function images are being used for in designs. Images can be used in many different ways, such as to convey information, as decorative support, or in functional ways. Consider what the images is being selected to do and provide text to describe that purpose.</p>
+
+<aside class="example"><h3>Example</h3>
+
+[... Text descriptions for: ... ]
+[... Home icon with functional text 'Home' ...]
+
+[... Photo of snow vista with descriptive text 'Used to evoke a sense of desire in snowboarders' ...]
+
+</aside>
+
+<aside class="learn_more"><h3>Learn more</h3>
+
+<ul>
+  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#qr-text-equiv-all"><acronym title="Success Criteria">SC</acronym> 1.1.1 Non-text Content</a></li>
+  <li><strong>Tutotial</strong>: <a href="/WAI/tutorials/images/">Demonstrates how to provide appropriate text alternatives based on the purpose of the image</a></li>
+  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/text-equiv-all.html">Understanding <acronym title="Success Criteria">SC</acronym> 1.1.1 Non-text Content</a></li>
+  <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#accountant">Describes the value of text alternatives to a blind user</a></li>
 </ul>
 
 </article>
@@ -546,7 +560,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      01 July 2015
+  	      06 July 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
@@ -582,6 +596,6 @@ The Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EO
 	</footer>
 	<script src="javascripts/main-9620dbb3.js" type="text/javascript"></script>
   <script src="javascripts/permalink-0533999e.js" type="text/javascript"></script>
-  <script src="javascripts/showhide-3a958028.js" type="text/javascript"></script>
+  <script src="javascripts/showhide.js" type="text/javascript"></script>
 	</body>
 </html>
