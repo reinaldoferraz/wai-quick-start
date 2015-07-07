@@ -7,7 +7,7 @@
   Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-110ad793.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-7c4ebab1.css" rel="stylesheet" type="text/css" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
@@ -205,6 +205,34 @@
 <aside class="example"><h3>Examples</h3>
 
 <div class="color-alone two-column">
+  <figure class="reference fail">
+    <figcaption>Inappropriate reference using color only</figcaption>
+    <div>
+      <form action="">
+        <p class="instruction"><span class="required">Required fields in red</span></p>
+        <div class='row'>
+          <label for="name1">Name:</label> <input type="text" id="name1" name="name">
+        </div>
+        <div class="row">
+          <label class="required" for="email1">Email:</label> <input type="text" id="email1" name="email">
+        </div>
+      </form>
+    </div>
+  </figure>
+  <figure class="reference pass">
+    <figcaption>Appropriate reference with more than color</figcaption>
+    <div>
+      <form action="">
+        <p class="instruction"><span class='required'>Required fields</span> are marked with <span class='required'>✻</span></p>
+        <div class='row'>
+          <label for="name2">Name:</label> <input type="text" id="name2" name="name"><br>
+        </div>
+        <div class="row">
+          <label class="required" for="email2">Email ✻:</label> <input type="text" id="email2" name="email">
+        </div>
+      </form>
+    </div>
+  </figure>
   <figure class="fail">
     <figcaption>Inaccessible pie chart</figcaption>
     <img src="images/inaccessible_pie_chart-29bab77d.png" width="150" height="150" alt="A pie chart">
@@ -261,19 +289,19 @@
   </div>
   <div>
     <figure class="hover">
-      <figcaption>Hovered over with a mouse</figcaption>
+      <figcaption>Mouse hovered over link</figcaption>
       <div>
         <p><a href="javascript:return false;">EAT ME</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
       </div>
     </figure>
     <figure class="keyboard">
-      <figcaption>Tabbed to link</figcaption>
+      <figcaption>Tabbed to link with keyboard</figcaption>
       <div>
         <p><a href="javascript:return false;">EAT ME</a></p>
       </div>
     </figure>
     <figure class="active">
-      <figcaption>Touched or clicked link</figcaption>
+      <figcaption>Touch or click on link</figcaption>
       <div>
         <p><a href="javascript:return false;">EAT ME</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
       </div>
@@ -325,29 +353,12 @@
 <aside class="example"><h3>Examples</h3>
 
 <div class="labels">
-  <figure class="fail">
-    <figcaption>Example of poorly associated labels</figcaption>
-    <div>
-      <form action="">
-        <div class="row">
-          <label class="required">E-mail ✻</label>
-          <input type="text" id="email3" name="email">
-        </div>
-        <div class="row">
-          <label>Website</label>
-          <input type="text" id="website" name="website">
-        </div>
-        <div class="row">
-          <textarea name="comment" id="comment"></textarea>
-        </div>
-      </form>
-    </div>
-  </figure>
   <figure class="pass">
     <figcaption>Good example of associated labels</figcaption>
     <div>
       <form action="">
         <legend>Add a comment</legend>
+        <p class="instruction"><span class='required'>Required fields</span> are marked with <span class='required'>✻</span></p>
         <div class="row">
           <label class="required" for="email4">Your E-mail ✻</label>
           <input type="text" id="email4" name="email">
@@ -401,7 +412,7 @@
   <figure>
     <figcaption>Example of prominent errors</figcaption>
     <div>
-      <div class="errors">
+      <div class="error-list">
         <p>There are two problems.</p>
         <ol class="fa-ul">
           <li id="error_email"><span class="fa fa-li fa-exclamation-triangle"></span><a href="javascript:document.getElementById('email5').focus()">The E-mail you provided is not valid</a></li>
@@ -410,6 +421,7 @@
       </div>
       <form action="">
         <legend>Add a comment</legend>
+        <p class="instruction"><span class='required'>Required fields</span> are marked with <span class='required'>✻</span></p>
         <div class="row">
           <label for="name5">Name</label>
           <input type="text" id="name5" name="name" value="Superbear">
@@ -478,7 +490,7 @@
     <div>
       <img src="images/content_in_browser-77be7e6f.png" alt="Example of content in a standard browser">
       <img src="images/content_in_phone-eb5bf01d.png" alt="Example of content displayed in a phone">
-      <p>Browser display uses multiple columns for primary content, visible navigation options, and visible secondary information.</p>
+      <p>Browser display without zoom uses multiple columns for primary content, visible navigation options, and visible secondary information.</p>
       <p>Mobile display uses single column for primary content, navigation options are revealed using an icon, and secondary information is also revealed via icon.</p>
     </div>
   </figure>
@@ -565,7 +577,7 @@ Shows real-life examples of the impact of accessibilty design on people with dis
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      06 July 2015
+  	      07 July 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
