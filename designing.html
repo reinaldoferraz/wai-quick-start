@@ -139,16 +139,16 @@
   </header>
 
   <div class="inner">
-      <p>These introductory tips cover the basics of accessible user interface and visual design.</p>
+      <p>These introductory tips cover the basics of accessible user interface design and visual design.</p>
 
 <h2 class="toc no_toc" id="on-this-page">On this page</h2>
 
 <ul class="toc" id="markdown-toc">
-  <li><a href="#provide-sufficient-contrast-between-colors">Provide sufficient contrast between colors</a></li>
-  <li><a href="#dont-use-color-alone-to-signify-meaning">Don't use color alone to signify meaning</a></li>
-  <li><a href="#ensure-interactive-elements-are-easy-to-identify">Ensure interactive elements are easy to identify</a></li>
+  <li><a href="#provide-sufficient-contrast-between-foreground-and-background">Provide sufficient contrast between foreground and background</a></li>
+  <li><a href="#dont-use-color-alone-to-convey-information">Don't use color alone to convey information</a></li>
+  <li><a href="#ensure-that-interactive-elements-are-easy-to-identify">Ensure that interactive elements are easy to identify</a></li>
   <li><a href="#provide-clear-and-consistent-navigation-options">Provide clear and consistent navigation options</a></li>
-  <li><a href="#ensure-form-elements-include-clearly-associated-labels">Ensure form elements include clearly associated labels</a></li>
+  <li><a href="#ensure-that-form-elements-include-clearly-associated-labels">Ensure that form elements include clearly associated labels</a></li>
   <li><a href="#provide-clear-feedback">Provide clear feedback</a></li>
   <li><a href="#use-headings-and-spacing-to-group-related-content">Use headings and spacing to group related content</a></li>
   <li><a href="#create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</a></li>
@@ -158,9 +158,9 @@
 
 <article class="tip ">
 
-<h2 class="attach_permalink" id="provide-sufficient-contrast-between-colors">Provide sufficient contrast between colors</h2>
+<h2 class="attach_permalink" id="provide-sufficient-contrast-between-foreground-and-background">Provide sufficient contrast between foreground and background</h2>
 
-<p>Text needs to have sufficient contrast between foreground and background colors. This includes text on images, background gradients, buttons, and other elements. A minimum contrast ratio is required by the Web Content Accessibility Guidelines (WCAG) and guidance on how to check contrast ratio is available. This does not apply for logos, or incidental text, such as text that happens to be in a photograph.</p>
+<p>Foreground text needs to have sufficient contrast with background colors. This includes text on images, background gradients, buttons, and other elements. This does not apply for logos, or incidental text, such as text that happens to be in a photograph. There are tools to help check if color combinations meet the minimum contrast ratio defined in <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>.</p>
 
 <p>Note that "contrast" is used as a short form for the more technically correct term "luminance contrast".</p>
 
@@ -190,7 +190,7 @@
   <li><strong>How To</strong>: <a href="/WAI/eval/preliminary.html#contrast">How to check contrast ratio</a></li>
   <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">Understanding <acronym title="Success Criteria">SC</acronym> 1.4.3 Contrast (Minimum)</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#shopper">How a user with "color blindness" experiences the Web</a></li>
-  <li><strong>Support Tools</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head">List of resources to help determine contrast ratio</a></li>
+  <li><strong>Support Tools</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head">List of tools to help determine contrast ratio</a></li>
 </ul>
 
 </article>
@@ -198,15 +198,15 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="dont-use-color-alone-to-signify-meaning">Don't use color alone to signify meaning</h2>
+<h2 class="attach_permalink" id="dont-use-color-alone-to-convey-information">Don't use color alone to convey information</h2>
 
-<p>Color can be useful to indicate emphasis or meaning but should not be the only way information is conveyed. Use additional identification that does not rely on color perception when using color to differentiate elements. For example, use an asterisk in addition to color to indicate required form fields, and use labels and patterns to help distinguish areas on graphs and maps.</p>
+<p>While color can be useful to convey information, color should not be the only way information is conveyed. When using color to differentiate elements, also provide additional identification that does not rely on color perception. For example, use an asterisk in addition to color to indicate required form fields, and use labels to distinguish areas on graphs.</p>
 
 <aside class="example"><h3>Examples</h3>
 
 <div class="color-alone two-column">
   <figure class="reference fail">
-    <figcaption>InInaccessible instruction using color only</figcaption>
+    <figcaption>Inaccessible instruction using color only</figcaption>
     <div>
       <form action="">
         <p class="instruction"><span class="required">Required fields are in red</span></p>
@@ -223,7 +223,7 @@
     <figcaption>Accessible instruction using color and symbol</figcaption>
     <div>
       <form action="">
-        <p class="instruction"><span class='required'>Required fields</span> are marked with <span class='required'>✻</span></p>
+        <p class="instruction"><span class='required'>Required fields</span> are in red and marked with an <span class='required'>✻</span></p>
         <div class='row'>
           <label for="name2">Name:</label> <input type="text" id="name2" name="name"><br>
         </div>
@@ -234,7 +234,7 @@
     </div>
   </figure>
   <figure class="question fail">
-    <figcaption>Inaccessible test question</figcaption>
+    <figcaption>Inaccessible test question using only color</figcaption>
     <div>
       <svg width="153" height="154" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <g>
@@ -256,7 +256,7 @@
     </div>
   </figure>
   <figure class="question pass">
-    <figcaption>Accessible test question</figcaption>
+    <figcaption>Accessible test question with numbers in addition to color</figcaption>
     <div>
       <svg width="153" height="154" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <g>
@@ -298,9 +298,9 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="ensure-interactive-elements-are-easy-to-identify">Ensure interactive elements are easy to identify</h2>
+<h2 class="attach_permalink" id="ensure-that-interactive-elements-are-easy-to-identify">Ensure that interactive elements are easy to identify</h2>
 
-<p>Provide distinct styles for interactive elements, such as links, buttons, and other controls, to make them easy to distinguish and identify. Those styles include interaction specific changes of appearance, for example in the event of a mouse hover, keyboard focus, and touch-screen activation. This helps users to identify the state of the element.</p>
+<p>Provide distinct styles for interactive elements, such as links and buttons, to make them easy to identify. For example, change the appearance of links on mouse hover, keyboard focus, and touch-screen activation.</p>
 
 <aside class="example"><h3>Examples</h3>
 
@@ -358,13 +358,23 @@
 
 <h2 class="attach_permalink" id="provide-clear-and-consistent-navigation-options">Provide clear and consistent navigation options</h2>
 
-<p>Ensure page designs include clear and consistent naming, styling and positioning of navigation elements. If your web site consists of many pages, provide more than one method of navigation, such as a breadcrumb navigation, a site search, or a site map. Help users understand where they are on a web page and in a website by providing orientation cues, such as clear headings and, if appropriate, breadcrumbs.</p>
+<p>Ensure that page designs include clear and consistent naming, styling and positioning of navigation elements. If your web site consists of many pages, provide more than one method of navigation, such as a breadcrumb navigation, a site search, or a site map. Help users understand where they are on a web page and in a website by providing orientation cues, such as clear headings and, if appropriate, breadcrumbs.</p>
 
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#consistent-behavior-consistent-locations"><acronym title="Success Criteria">SC</acronym> 3.2.3 Consistent Navigation</a></li>
-  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html">Understanding <acronym title="Success Criteria">SC</acronym> 3.2.3 Consistent Navigation</a></li>
+  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>:
+    <ul>
+      <li><a href="/WAI/WCAG20/quickref/#consistent-behavior-consistent-locations"><acronym title="Success Criteria">SC</acronym> 3.2.3 Consistent Navigation</a></li>
+      <li><a href="/WAI/WCAG20/quickref/#navigation-mechanisms-mult-loc"><acronym title="Success Criteria">SC</acronym> 2.4.5 Multiple Ways</a></li>
+    </ul>
+  </li>
+  <li><strong>Background</strong>:
+    <ul>
+      <li><a href="/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html">Understanding <acronym title="Success Criteria">SC</acronym> 3.2.3 Consistent Navigation</a></li>
+      <li><a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html">Understanding <acronym title="Success Criteria">SC</acronym> 2.4.5 Multiple Ways</a></li>
+    </ul>
+  </li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#reporter">How consistency and navigation can help someone with cognitive difficulties</a></li>
 </ul>
 
@@ -373,9 +383,9 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="ensure-form-elements-include-clearly-associated-labels">Ensure form elements include clearly associated labels</h2>
+<h2 class="attach_permalink" id="ensure-that-form-elements-include-clearly-associated-labels">Ensure that form elements include clearly associated labels</h2>
 
-<p>When creating forms, ensure that all fields have an adjacent, descriptive label. For left-to-right languages, labels are usually positioned to the left or above the field, except for checkboxes and radio buttons where it is usually to the right. Avoid having too much distance between labels and associated elements.</p>
+<p>Ensure that all fields have a descriptive label adjacent to the field. For left-to-right languages, labels are usually positioned to the left or above the field, except for checkboxes and radio buttons where they are usually to the right. Avoid having too much space between labels and fields.</p>
 
 <aside class="example"><h3>Examples</h3>
 
@@ -423,7 +433,7 @@
       <li><a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">Understanding <acronym title="Success Criteria">SC</acronym> 2.4.6 Headings and Labels</a></li>
     </ul>
   </li>
-  <li><strong>Tutotial</strong>: <a href="/WAI/tutorials/forms/labels/#visual-position-of-label-text">Explains more about the visual position of labels</a></li>
+  <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/forms/labels/#visual-position-of-label-text">Visual position of label text</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#supermarketassistant">How clear labelling can help someone with cognitive difficulties</a></li>
 </ul>
 
@@ -434,7 +444,7 @@
 
 <h2 class="attach_permalink" id="provide-clear-feedback">Provide clear feedback</h2>
 
-<p>Provide feedback for any page interactions, such as confirmation of form submission, alerting the user when something goes wrong, or notification of changes on the page. Important feedback that requires user action should be presented in a prominent style. Any instructions should be clear and easy to follow. </p>
+<p>Provide feedback for interactions, such as confirming form submission, alerting the user when something goes wrong, or notifying the user of changes on the page. Important feedback that requires user action should be presented in a prominent style. Instructions should be clear and easy to follow. </p>
 
 <aside class="example"><h3>Example</h3>
 
@@ -443,22 +453,22 @@
     <figcaption>Example of prominent errors</figcaption>
     <div>
       <div class="error-list">
-        <p>There are two problems.</p>
+        <p>Please correct the following errors.</p>
         <ol class="fa-ul">
-          <li id="error_email"><span class="fa fa-li fa-exclamation-triangle"></span><a href="javascript:document.getElementById('email5').focus()">The E-mail you provided is not valid</a></li>
+          <li id="error_email"><span class="fa fa-li fa-exclamation-triangle"></span><a href="javascript:document.getElementById('email5').focus()">You entered an invalid email</a></li>
           <li id="error_comment"><span class="fa fa-li fa-exclamation-triangle"></span><a href="javascript:document.getElementById('comment3').focus()">A Comment is required</a></li>
         </ol>
       </div>
       <form action="">
         <legend>Add a comment</legend>
-        <p class="instruction"><span class='required'>Required fields</span> are marked with <span class='required'>✻</span></p>
+        <p class="instruction"><span class='required'>Required fields are in red and </span> are marked with <span class='required'>✻</span></p>
         <div class="row">
           <label for="name5">Name</label>
           <input type="text" id="name5" name="name" value="Superbear">
         </div>
         <div class="row error">
           <label class="required" for="email5"><span class="fa fa-exclamation-triangle"></span> E-mail ✻</label>
-          <input type="text" id="email5" name="email" value="superbear@@hq.space" aria-invalid="true" aria-describedby="error_email">
+          <input type="text" id="email5" name="email" value="superbear@@hq.example.com" aria-invalid="true" aria-describedby="error_email">
         </div>
         <div class="row">
           <label for="website3">Website</label>
@@ -479,7 +489,7 @@
 
 <ul>
   <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#minimize-error-identified"><acronym title="Success Criteria">SC</acronym> 3.3.1 Error Identification</a></li>
-  <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/forms/notifications/">Shows how feedback can be provided in different ways</a></li>
+  <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/forms/notifications/">User Notifications</a></li>
   <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html">Understanding <acronym title="Success Criteria">SC</acronym> 3.3.1 Error Identification</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#classroomstudent">How making important content easily identifiable can help</a></li>
 </ul>
@@ -491,13 +501,13 @@
 
 <h2 class="attach_permalink" id="use-headings-and-spacing-to-group-related-content">Use headings and spacing to group related content</h2>
 
-<p>Content design benefits from clear headings to chunk up content. Use whitespace to reduce clutter, make related content or elements more apparent, and make content more scannable.</p>
+<p>Provide clear headings to group content, reduce clutter, and make it easier to scan. Use whitespace to make relationships between content and elements more apparent.</p>
 
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
   <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#navigation-mechanisms-descriptive"><acronym title="Success Criteria">SC</acronym> 2.4.6 Headings and Labels</a></li>
-  <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/page-structure/headings/">Discusses different ways to use headings to provide meaning to content</a></li>
+  <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/page-structure/headings/">Headings</a></li>
   <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">Understanding <acronym title="Success Criteria">SC</acronym> 2.4.6 Headings and Labels</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#accountant">Describes how headings can be helpful for navigation</a></li>
 </ul>
@@ -509,7 +519,7 @@
 
 <h2 class="attach_permalink" id="create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</h2>
 
-<p>Consider how page information is presented in different sized viewports, such as mobile phones or zoomed browser windows. Position and presentation of main elements, such as header and navigation can be changed to make best use of the space. Ensure text size and line width are set to maximize readability and legibility.</p>
+<p>Consider how page information is presented in different sized viewports, such as mobile phones or zoomed browser windows. Position and presentation of main elements, such as header and navigation can be changed to make best use of the space. Ensure that text size and line width are set to maximize readability and legibility.</p>
 
 <aside class="example"><h3>Example</h3>
 
@@ -543,7 +553,7 @@
 
 <h2 class="attach_permalink" id="provide-a-text-alternative-for-images">Provide a text alternative for images</h2>
 
-<p>Provide a text description to communicate what information or function images are being used for in designs. Images can be used in many different ways, such as to convey information, as decorative support, or in functional ways. Consider what the image is being selected to do and provide text to describe that purpose. Decorative images, that don't add information to the content of the page, should be presented in CSS or provided with empty alternative text.</p>
+<p>Provide a text description to communicate what information or function is conveyed by an image. Images can be used in many different ways, such as to convey information, as decorative support, or in functional ways. Consider what the image is being selected to do and provide text to describe that purpose. Decorative images, that don't add information to the content of the page, should be presented in CSS or provided with null alternative text.</p>
 
 <aside class="example"><h3>Example</h3>
 
@@ -558,7 +568,7 @@
 
 <ul>
   <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#qr-text-equiv-all"><acronym title="Success Criteria">SC</acronym> 1.1.1 Non-text Content</a></li>
-  <li><strong>Tutotial</strong>: <a href="/WAI/tutorials/images/">Demonstrates how to provide appropriate text alternatives based on the purpose of the image</a></li>
+  <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/images/">Images Concepts</a></li>
   <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/text-equiv-all.html">Understanding <acronym title="Success Criteria">SC</acronym> 1.1.1 Non-text Content</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#accountant">Describes the value of text alternatives to a blind user</a></li>
 </ul>
@@ -570,7 +580,7 @@
 
 <h2 class="attach_permalink" id="learn-more-about-accessibility">Learn more about accessibility</h2>
 
-<p>These tips are important points to consider when designing accessible websites, but there is always more to learn. The following resources will help you find out more about accessibility, why it is important, and what guidelines exist to help support people with disabilities accessing the web.</p>
+<p>These tips are just some of the important accessibility points to address when designing websites. There are more things to consider. The following resources will help you learn more about accessibility — why it is important for people with disabilities, for designers, and for organizations; about web accessibility guidelines; and much more. </p>
 
 <aside class="learn_more"><h3>Learn more</h3>
 
@@ -579,7 +589,7 @@
   <li><a href="/WAI/intro/people-use-web/principles">Accessibility Principles</a>: An introduction to the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> requirements</li>
   <li><a href="/WAI/intro/people-use-web">How people with disabilities use the web</a>: Real-life examples of the benefits of accessibility for people with disabilities</li>
   <li><a href="/WAI/tutorials/">Web Accessibility Tutorials</a>: Shows you how to develop web content that is accessible to people with disabilities</li>
-  <li><a href="/WAI/demos/bad/">Before and After Demonstration</a>: Example accessible and inaccessible websites that share the same visual design, with annotations on key accessibility barriers and repairs</li>
+  <li><a href="/WAI/demos/bad/">Before and After Demonstration</a>: Shows an inaccessible and accessible version of the same website, with annotations on accessibility barriers and repairs</li>
 </ul>
 
 </article>
@@ -606,7 +616,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      09 July 2015
+  	      10 July 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
