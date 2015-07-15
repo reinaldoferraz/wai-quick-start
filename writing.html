@@ -7,7 +7,7 @@
   Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-e75c7f74.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-7ed09a8e.css" rel="stylesheet" type="text/css" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
@@ -125,9 +125,9 @@
 </nav>
 
       <aside class="what-is-wcag">
-  <h2>What is <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>?</h2>
-  <p>Web Content Accessibility Guidelines (WCAG) is the international standard for making web content more accessible to people with disabilities. The <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> requirements are called "success criteria" (SC).</p>
-  <p>Learn more from the <a href="/WAI/intro/wcag.php"><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Overview</a></p>
+  <h2>About <abbr title="Web Content Accessibility Guidelines">WCAG</abbr></h2>
+  <p>Web Content Accessibility Guidelines (WCAG) is the international standard for making web content more accessible to people with disabilities. The <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> requirements are called "success criteria" (SC).</p>
+  <p>Learn more from the <a href="/WAI/intro/wcag.php"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Overview</a>.</p>
 </aside>
 
     </div>
@@ -143,12 +143,12 @@
 <ul class="toc" id="markdown-toc">
   <li><a href="#keep-content-clear-and-concise">Keep content clear and concise</a></li>
   <li><a href="#avoid-using-overly-complex-words-and-phrases">Avoid using overly complex words and phrases</a></li>
-  <li><a href="#provide-useful-link-text">Provide useful link text</a></li>
-  <li><a href="#provide-meaningful-headings-to-structure-text">Provide meaningful headings to structure text</a></li>
+  <li><a href="#provide-meaningful-link-text">Provide meaningful link text</a></li>
+  <li><a href="#provide-headings-to-structure-text">Provide headings to structure text</a></li>
   <li><a href="#use-informative-and-unique-page-titles">Use informative and unique page titles</a></li>
-  <li><a href="#provide-text-alternatives-for-all-images">Provide text alternatives for all images</a></li>
+  <li><a href="#provide-text-alternatives-for-images">Provide text alternatives for images</a></li>
   <li><a href="#provide-transcripts-and-captions-for-multimedia-content">Provide transcripts and captions for multimedia content</a></li>
-  <li><a href="#expand-all-acronyms-on-their-first-use">Expand all acronyms on their first use</a></li>
+  <li><a href="#expand-acronyms-on-their-first-use">Expand acronyms on their first use</a></li>
   <li><a href="#learn-more-about-accessibility">Learn more about accessibility</a></li>
 </ul>
 
@@ -160,8 +160,22 @@
 
 <aside class="example"><h3>Example</h3>
 
-<p>[… Contrasting example of involved text against a clear text …]</p>
+<div class="two-column">
+  <figure>
+    <figcaption>Complex text</figcaption>
+    <div>
+      <p class="fail">In the event of a vehicular collision, a company assigned representative will seek to ascertain the extent and cause of damages to property belonging to the parties involved. Once we obtain information that causes us to understand the causality, we will assign monetary remuneration accordingly.</p>
+    </div>
+  </figure>
+  <figure>
+    <figcaption>Clear and simple text</figcaption>
+    <div>
+      <p class="pass">If our client is involved in a car accident, an agent will investigate. Those findings will determine the payment of claims.</p>
+    </div>
+  </figure>
+</div>
 
+{::nomarkdown}
 </aside>
 
 </article>
@@ -180,7 +194,7 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="provide-useful-link-text">Provide useful link text</h2>
+<h2 class="attach_permalink" id="provide-meaningful-link-text">Provide meaningful link text</h2>
 
 <p>Try to write link text so that it would make sense out of context. Link text should describe the content of the link target in a meaningful way. Avoid using link text such as 'click here', 'find out more', or 'read more'. Where the link target is not HTML, indicate the document type and approximate size in the link text.</p>
 
@@ -195,7 +209,7 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="provide-meaningful-headings-to-structure-text">Provide meaningful headings to structure text</h2>
+<h2 class="attach_permalink" id="provide-headings-to-structure-text">Provide headings to structure text</h2>
 
 <p>Use clear and simple headings to split up text into manageable chunks. Headings should be short and aim to describe or introduce the following section. They should clarify what the following section is about.  </p>
 
@@ -212,7 +226,7 @@
 
 <h2 class="attach_permalink" id="use-informative-and-unique-page-titles">Use informative and unique page titles</h2>
 
-<p>The title of a page should be unique within the website and should simply describe the page content. For pages that are part of a multi-step process, consider including the stage within the title.</p>
+<p>Provide unique titles to each page that simply describes page content and distinguishes it from other pages. Consider including the stage within the title for pages that are part of a group, such as a multi-step process.</p>
 
 <aside class="example"><h3>Example</h3>
 
@@ -223,9 +237,9 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="provide-text-alternatives-for-all-images">Provide text alternatives for all images</h2>
+<h2 class="attach_permalink" id="provide-text-alternatives-for-images">Provide text alternatives for images</h2>
 
-<p>Each image used should be provided with alternative text that describes the information or function represented by the image. Provide text that describes the purpose the image serves or what information it conveys. Where an image is purely decorative, <code>null</code> alternative text may be appropriate.</p>
+<p>Assign alternative text to every image. Text must clearly describe the information or function represented by the image. Where an image is purely decorative, use empty alternative text.</p>
 
 <aside class="example"><h3>Example</h3>
 
@@ -241,7 +255,7 @@
 
 <h2 class="attach_permalink" id="provide-transcripts-and-captions-for-multimedia-content">Provide transcripts and captions for multimedia content</h2>
 
-<p>For all multimedia content, provide transcripts of the content. The transcript should include any additional descriptions that are important for understanding the content. For multimedia content that includes video, captions may be required. Similar to the transcript, the captions provide a text version of the audio content, but with the addition of timing markers to indicate when in the video the text should be presented.</p>
+<p>For multimedia content, provide transcripts of the content. The transcript should include any additional descriptions that are important for understanding the content. For multimedia content that includes video, captions may be required. Similar to the transcript, the captions provide a text version of the audio content, but with the addition of timing markers to indicate when in the video the text should be presented.</p>
 
 <aside class="example"><h3>Example</h3>
 
@@ -253,13 +267,20 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="expand-all-acronyms-on-their-first-use">Expand all acronyms on their first use</h2>
+<h2 class="attach_permalink" id="expand-acronyms-on-their-first-use">Expand acronyms on their first use</h2>
 
-<p>When first used on a page, ensure that acronyms are fully expanded. Follow the expansion with the acronym. Some extremely common acronyms may be better known than the expanded form, for example, BBC, or HTML. In such cases, an expansion may not be necessary, although avoid assuming internal organizational acronyms are as well known.</p>
+<p>When first used on a page, ensure that acronyms are fully expanded. Follow the expansion with the abbr. Some extremely common acronyms may be better known than the expanded form, for example, BBC, or HTML. In such cases, an expansion may not be necessary, although avoid assuming internal organizational acronyms are as well known.</p>
 
 <aside class="example"><h3>Example</h3>
 
-<p>[… Simple example of paragraph with acronym presented twice, first with it expanded second using &lt;acronym&gt; …]</p>
+<div class="">
+  <figure>
+    <figcaption>Example paragraph introducing and then referencing an acronym</figcaption>
+    <div>
+      <p>Since the passage of the Communications and Video Accessibility Act (CVAA), we have seen increased use of auto generated captions. While this may be well-intentioned, auto-captioning is still quite unreliable and error-prone and does not usually fulfill the intention of the <abbr title="Communications and Video Accessibility Act">CVAA</abbr> legislation.</p>
+    </div>
+  </figure>
+</div>
 
 </aside>
 
@@ -274,8 +295,9 @@
 
 <ul>
   <li><a href="/standards/webdesign/accessibility"><abbr title="World Wide Web Consortium">W3C</abbr> Accessibility</a>: Introduces accessibility and provides links to many helpful resources</li>
-  <li><a href="/WAI/intro/people-use-web/principles">Accessibility Principles</a>: An introduction to the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> requirements</li>
+  <li><a href="/WAI/intro/people-use-web/principles">Accessibility Principles</a>: An introduction to the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> requirements</li>
   <li><a href="/WAI/intro/people-use-web">How people with disabilities use the web</a>: Real-life examples of the benefits of accessibility for people with disabilities</li>
+  <li><a href="/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a>: Includes tools to help explore readability of content</li>
 </ul>
 
 </article>
@@ -302,7 +324,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      10 July 2015
+  	      15 July 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>

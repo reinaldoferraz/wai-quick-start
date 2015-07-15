@@ -7,7 +7,7 @@
   Quick Start Tips &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="stylesheets/main-e75c7f74.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-7ed09a8e.css" rel="stylesheet" type="text/css" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
@@ -125,9 +125,9 @@
 </nav>
 
       <aside class="what-is-wcag">
-  <h2>What is <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>?</h2>
-  <p>Web Content Accessibility Guidelines (WCAG) is the international standard for making web content more accessible to people with disabilities. The <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> requirements are called "success criteria" (SC).</p>
-  <p>Learn more from the <a href="/WAI/intro/wcag.php"><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Overview</a></p>
+  <h2>About <abbr title="Web Content Accessibility Guidelines">WCAG</abbr></h2>
+  <p>Web Content Accessibility Guidelines (WCAG) is the international standard for making web content more accessible to people with disabilities. The <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> requirements are called "success criteria" (SC).</p>
+  <p>Learn more from the <a href="/WAI/intro/wcag.php"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Overview</a>.</p>
 </aside>
 
     </div>
@@ -147,9 +147,9 @@
   <li><a href="#provide-clear-and-consistent-navigation-options">Provide clear and consistent navigation options</a></li>
   <li><a href="#ensure-that-form-elements-include-clearly-associated-labels">Ensure that form elements include clearly associated labels</a></li>
   <li><a href="#provide-clear-feedback">Provide clear feedback</a></li>
-  <li><a href="#use-headings-and-spacing-to-group-related-content">Use headings and spacing to group related content</a></li>
+  <li><a href="#use-spacing-and-headings-to-group-related-content">Use spacing and headings to group related content</a></li>
   <li><a href="#create-designs-for-different-viewport-sizes">Create designs for different viewport sizes</a></li>
-  <li><a href="#provide-a-text-alternative-for-images">Provide a text alternative for images</a></li>
+  <li><a href="#provide-text-alternatives-for-images">Provide text alternatives for images</a></li>
   <li><a href="#learn-more-about-accessibility">Learn more about accessibility</a></li>
 </ul>
 
@@ -157,9 +157,9 @@
 
 <h2 class="attach_permalink" id="provide-sufficient-contrast-between-foreground-and-background">Provide sufficient contrast between foreground and background</h2>
 
-<p>Foreground text needs to have sufficient contrast with background colors. This includes text on images, background gradients, buttons, and other elements. This does not apply for logos, or incidental text, such as text that happens to be in a photograph. There are tools to help check if color combinations meet the minimum contrast ratio defined in <acronym title="Web Content Accessibility Guidelines">WCAG</acronym>.</p>
+<p>Foreground text needs to have sufficient contrast with background colors. This includes text on images, background gradients, buttons, and other elements. This does not apply for logos, or incidental text, such as text that happens to be in a photograph. The links below provide more information on the minimum contrast ratio as required by the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> and how to check the contrast.</p>
 
-<p>Note that "contrast" is used as a short form for the more technically correct term "luminance contrast".</p>
+<p>Note that "contrast ratio" is a short version of the more technically correct term "luminance contrast ratio".</p>
 
 <aside class="example"><h3>Examples</h3>
 
@@ -183,9 +183,9 @@
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><acronym title="Success Criteria">SC</acronym> 1.4.3 Contrast (Minimum)</a></li>
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><abbr title="Success Criteria">SC</abbr> 1.4.3 Contrast (Minimum)</a></li>
   <li><strong>How To</strong>: <a href="/WAI/eval/preliminary.html#contrast">How to check contrast ratio</a></li>
-  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">Understanding <acronym title="Success Criteria">SC</acronym> 1.4.3 Contrast (Minimum)</a></li>
+  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">Understanding <abbr title="Success Criteria">SC</abbr> 1.4.3 Contrast (Minimum)</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#shopper">How a user with "color blindness" experiences the Web</a></li>
   <li><strong>Support Tools</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head">List of tools to help determine contrast ratio</a></li>
 </ul>
@@ -244,9 +244,9 @@
       </svg>
       <form action="">
         <legend>Which is the right-angled triangle?</legend>
+        <input id='answer-green1' name='answer1' name='green' type='radio'> <label for='answer-green1'>Green</label><br>
         <input id='answer-blue1' name='answer1' name='blue' type='radio'> <label for='answer-blue1'>Blue</label><br>
         <input id='answer-red1' name='answer1' name='red' type='radio'> <label for='answer-red1'>Red</label><br>
-        <input id='answer-green1' name='answer1' name='green' type='radio'> <label for='answer-green1'>Green</label><br>
         <input id='answer-yellow1' name='answer1' name='yellow' type='radio'> <label for='answer-yellow1'>Yellow</label><br>
         <input id='answer-pass1' name='answer1' name='pass' type='radio'> <label for='answer-pass1'>Don't know</label>
       </form>
@@ -285,8 +285,8 @@
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><acronym title="Success Criteria">SC</acronym> 1.4.1 Use of Color</a></li>
-  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">Understanding <acronym title="Success Criteria">SC</acronym> 1.4.1 Use of Color</a></li>
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><abbr title="Success Criteria">SC</abbr> 1.4.1 Use of Color</a></li>
+  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">Understanding <abbr title="Success Criteria">SC</abbr> 1.4.1 Use of Color</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#shopper">How a user with "color blindness" experiences the Web</a></li>
 </ul>
 
@@ -306,26 +306,27 @@
     <figure>
       <figcaption>Style links to stand out from text</figcaption>
       <div>
-        <p>Some people can't use a mouse and use a <a href="javascript:return false;">keyboard to navigate</a> through web pages, using the tab and arrow keys. It is important that all interactive elements can be reached using the keyboard and that it is clear which element has focus. If this is not clear then users won't know which link or element they are selecting.</p>
+        <p>Some people can't use a mouse and use only a <a href="javascript:return false;">keyboard to navigate</a> through web pages.</p>
+        <p>It is important that users can reach all interactive elements using the keyboard, and that it is clear which element has focus.</p>
         <p></p>
       </div>
     </figure>
   </div>
   <div>
     <figure class="hover">
-      <figcaption>Mouse hovered over link</figcaption>
+      <figcaption>Mouse hover style</figcaption>
       <div>
         <p><a href="javascript:return false;">keyboard to navigate</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
       </div>
     </figure>
     <figure class="keyboard">
-      <figcaption>Tabbed to link with keyboard</figcaption>
+      <figcaption>Keyboard focus style</figcaption>
       <div>
         <p><a href="javascript:return false;">keyboard to navigate</a></p>
       </div>
     </figure>
     <figure class="active">
-      <figcaption>Touch or click on link</figcaption>
+      <figcaption>Touch or click style</figcaption>
       <div>
         <p><a href="javascript:return false;">keyboard to navigate</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
       </div>
@@ -338,8 +339,8 @@
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#navigation-mechanisms-focus-visible"><acronym title="Success Criteria">SC</acronym> 2.4.7 Focus Visible</a></li>
-  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">Understanding <acronym title="Success Criteria">SC</acronym> 2.4.7 Focus Visible</a></li>
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#navigation-mechanisms-focus-visible"><abbr title="Success Criteria">SC</abbr> 2.4.7 Focus Visible</a></li>
+  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">Understanding <abbr title="Success Criteria">SC</abbr> 2.4.7 Focus Visible</a></li>
   <li><strong>User Story</strong>:
     <ul>
       <li><a href="/WAI/intro/people-use-web/stories#reporter">Challenges faced by someone with a limited ability to use a mouse</a></li>
@@ -355,21 +356,21 @@
 
 <h2 class="attach_permalink" id="provide-clear-and-consistent-navigation-options">Provide clear and consistent navigation options</h2>
 
-<p>Ensure that page designs include clear and consistent naming, styling and positioning of navigation elements. If your web site consists of many pages, provide more than one method of navigation, such as a breadcrumb navigation, a site search, or a site map. Help users understand where they are on a web page and in a website by providing orientation cues, such as clear headings and, if appropriate, breadcrumbs.</p>
+<p>Ensure that page designs include clear and consistent naming, styling, and positioning of navigation elements. If your web site consists of many pages, provide more than one method of navigation, such as a breadcrumb navigation, a site search, or a site map. Help users understand where they are on a web page and in a website by providing orientation cues, such as clear headings and, if appropriate, breadcrumbs.</p>
 
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>:
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>:
     <ul>
-      <li><a href="/WAI/WCAG20/quickref/#consistent-behavior-consistent-locations"><acronym title="Success Criteria">SC</acronym> 3.2.3 Consistent Navigation</a></li>
-      <li><a href="/WAI/WCAG20/quickref/#navigation-mechanisms-mult-loc"><acronym title="Success Criteria">SC</acronym> 2.4.5 Multiple Ways</a></li>
+      <li><a href="/WAI/WCAG20/quickref/#consistent-behavior-consistent-locations"><abbr title="Success Criteria">SC</abbr> 3.2.3 Consistent Navigation</a></li>
+      <li><a href="/WAI/WCAG20/quickref/#navigation-mechanisms-mult-loc"><abbr title="Success Criteria">SC</abbr> 2.4.5 Multiple Ways</a></li>
     </ul>
   </li>
   <li><strong>Background</strong>:
     <ul>
-      <li><a href="/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html">Understanding <acronym title="Success Criteria">SC</acronym> 3.2.3 Consistent Navigation</a></li>
-      <li><a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html">Understanding <acronym title="Success Criteria">SC</acronym> 2.4.5 Multiple Ways</a></li>
+      <li><a href="/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html">Understanding <abbr title="Success Criteria">SC</abbr> 3.2.3 Consistent Navigation</a></li>
+      <li><a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html">Understanding <abbr title="Success Criteria">SC</abbr> 2.4.5 Multiple Ways</a></li>
     </ul>
   </li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#reporter">How consistency and navigation can help someone with cognitive difficulties</a></li>
@@ -418,16 +419,16 @@
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: 
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>: 
     <ul>
-      <li><a href="/WAI/WCAG20/quickref/#minimize-error-cues"><acronym title="Success Criteria">SC</acronym> 3.3.2 Labels or Instructions</a></li>
-      <li><a href="/WAI/WCAG20/quickref/#navigation-mechanisms-descriptive"><acronym title="Success Criteria">SC</acronym> 2.4.6 Headings and Labels</a></li>
+      <li><a href="/WAI/WCAG20/quickref/#minimize-error-cues"><abbr title="Success Criteria">SC</abbr> 3.3.2 Labels or Instructions</a></li>
+      <li><a href="/WAI/WCAG20/quickref/#navigation-mechanisms-descriptive"><abbr title="Success Criteria">SC</abbr> 2.4.6 Headings and Labels</a></li>
     </ul>
   </li>
   <li><strong>Background</strong>:
     <ul>
-      <li><a href="/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">Understanding <acronym title="Success Criteria">SC</acronym> 3.3.2 Labels or Instructions</a></li>
-      <li><a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">Understanding <acronym title="Success Criteria">SC</acronym> 2.4.6 Headings and Labels</a></li>
+      <li><a href="/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">Understanding <abbr title="Success Criteria">SC</abbr> 3.3.2 Labels or Instructions</a></li>
+      <li><a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">Understanding <abbr title="Success Criteria">SC</abbr> 2.4.6 Headings and Labels</a></li>
     </ul>
   </li>
   <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/forms/labels/#visual-position-of-label-text">Visual position of label text</a></li>
@@ -485,9 +486,9 @@
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#minimize-error-identified"><acronym title="Success Criteria">SC</acronym> 3.3.1 Error Identification</a></li>
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#minimize-error-identified"><abbr title="Success Criteria">SC</abbr> 3.3.1 Error Identification</a></li>
   <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/forms/notifications/">User Notifications</a></li>
-  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html">Understanding <acronym title="Success Criteria">SC</acronym> 3.3.1 Error Identification</a></li>
+  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html">Understanding <abbr title="Success Criteria">SC</abbr> 3.3.1 Error Identification</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#classroomstudent">How making important content easily identifiable can help</a></li>
 </ul>
 
@@ -496,16 +497,16 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="use-headings-and-spacing-to-group-related-content">Use headings and spacing to group related content</h2>
+<h2 class="attach_permalink" id="use-spacing-and-headings-to-group-related-content">Use spacing and headings to group related content</h2>
 
-<p>Provide clear headings to group content, reduce clutter, and make it easier to scan. Use whitespace to make relationships between content and elements more apparent.</p>
+<p>Use whitespace and proximity to make relationships between content more apparent. Style headings to group content, reduce clutter, and make it easier to scan and understand.</p>
 
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#navigation-mechanisms-descriptive"><acronym title="Success Criteria">SC</acronym> 2.4.6 Headings and Labels</a></li>
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#navigation-mechanisms-descriptive"><abbr title="Success Criteria">SC</abbr> 2.4.6 Headings and Labels</a></li>
   <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/page-structure/headings/">Headings</a></li>
-  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">Understanding <acronym title="Success Criteria">SC</acronym> 2.4.6 Headings and Labels</a></li>
+  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">Understanding <abbr title="Success Criteria">SC</abbr> 2.4.6 Headings and Labels</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#accountant">Describes how headings can be helpful for navigation</a></li>
 </ul>
 
@@ -538,8 +539,8 @@
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#visual-audio-contrast-scale"><acronym title="Success Criteria">SC</acronym> 1.4.4 Resize text</a></li>
-  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">Understanding <acronym title="Success Criteria">SC</acronym> 1.4.4 Resize text</a></li>
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#visual-audio-contrast-scale"><abbr title="Success Criteria">SC</abbr> 1.4.4 Resize text</a></li>
+  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">Understanding <abbr title="Success Criteria">SC</abbr> 1.4.4 Resize text</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#retiree">Describes how alternative views of zoomed pages can be helpful</a></li>
 </ul>
 
@@ -548,25 +549,23 @@
 </article>
 <article class="tip ">
 
-<h2 class="attach_permalink" id="provide-a-text-alternative-for-images">Provide a text alternative for images</h2>
+<h2 class="attach_permalink" id="provide-text-alternatives-for-images">Provide text alternatives for images</h2>
 
-<p>Provide a text description to communicate what information or function is conveyed by an image. Images can be used in many different ways, such as to convey information, as decorative support, or in functional ways. Consider what the image is being selected to do and provide text to describe that purpose. Decorative images, that don't add information to the content of the page, should be presented in CSS or provided with null alternative text.</p>
+<p>Provide text which describes the purpose of each image. Images might convey information, provide decorative support, or support functionality. Alternative text is not needed for purely decorative images that don't add information to the page.</p>
 
 <aside class="example"><h3>Example</h3>
 
 [... Text descriptions for: ... ]
 [... Home icon with functional text 'Home' ...]
 
-[... Photo of snow vista with descriptive text 'Used to evoke a sense of desire in snowboarders' ...]
-
 </aside>
 
 <aside class="learn_more"><h3>Learn more</h3>
 
 <ul>
-  <li><strong><acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#qr-text-equiv-all"><acronym title="Success Criteria">SC</acronym> 1.1.1 Non-text Content</a></li>
+  <li><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Requirement</strong>: <a href="/WAI/WCAG20/quickref/#qr-text-equiv-all"><abbr title="Success Criteria">SC</abbr> 1.1.1 Non-text Content</a></li>
   <li><strong>Tutorial</strong>: <a href="/WAI/tutorials/images/">Images Concepts</a></li>
-  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/text-equiv-all.html">Understanding <acronym title="Success Criteria">SC</acronym> 1.1.1 Non-text Content</a></li>
+  <li><strong>Background</strong>: <a href="/TR/UNDERSTANDING-WCAG20/text-equiv-all.html">Understanding <abbr title="Success Criteria">SC</abbr> 1.1.1 Non-text Content</a></li>
   <li><strong>User Story</strong>: <a href="/WAI/intro/people-use-web/stories#accountant">Describes the value of text alternatives to a blind user</a></li>
 </ul>
 
@@ -583,10 +582,11 @@
 
 <ul>
   <li><a href="/standards/webdesign/accessibility"><abbr title="World Wide Web Consortium">W3C</abbr> Accessibility</a>: Introduces accessibility and provides links to many helpful resources</li>
-  <li><a href="/WAI/intro/people-use-web/principles">Accessibility Principles</a>: An introduction to the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> requirements</li>
+  <li><a href="/WAI/intro/people-use-web/principles">Accessibility Principles</a>: An introduction to the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> requirements</li>
   <li><a href="/WAI/intro/people-use-web">How people with disabilities use the web</a>: Real-life examples of the benefits of accessibility for people with disabilities</li>
   <li><a href="/WAI/tutorials/">Web Accessibility Tutorials</a>: Shows you how to develop web content that is accessible to people with disabilities</li>
   <li><a href="/WAI/demos/bad/">Before and After Demonstration</a>: Shows an inaccessible and accessible version of the same website, with annotations on accessibility barriers and repairs</li>
+  <li><a href="/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a>: Includes tools to help explore contrast ratio</li>
 </ul>
 
 </article>
@@ -613,7 +613,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      14 July 2015
+  	      15 July 2015
 				</li>
 	      <li>
   <strong>Editors:</strong>
