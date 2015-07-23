@@ -117,7 +117,7 @@ Use clear and simple headings to split up text into manageable chunks. Headings 
 {:.attach_permalink}
 ## Provide informative, unique page titles
 
-Provide unique titles to each page that simply describes page content or purpose, and distinguishes it from other pages. Place your organization's name at the end of the title if including this information. Consider including the stage within the title for pages that are part of a group, such as a multi-step process.
+Provide unique titles to each page that simply describes page content or purpose and distinguishes it from other pages. Place your organisation's name at the end of the title if inlcuding this information. Consider including the stage within the title for pages that are part of a group, such as a multi-step process.
 
 {::nomarkdown}
 <%= example %>
@@ -137,7 +137,7 @@ Provide unique titles to each page that simply describes page content or purpose
 {:.attach_permalink}
 ## Provide text alternatives for images
 
-Assign alternative text to every image. Text must clearly describe the information or function represented by the image. Where an image is purely decorative, use empty alternative text.
+Assign alternative text to every image. Text must clearly describe the information or function represented by the image. Where an image is purely decorative, use empty alternative text. For complex images, see the [tutorial for complex images](http://www.w3.org/WAI/tutorials/images/complex/).
 
 {::nomarkdown}
 <%= example %>
